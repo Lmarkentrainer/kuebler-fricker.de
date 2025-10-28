@@ -1,241 +1,82 @@
 <!doctype html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BKF – Kübler & Fricker | Unabhängige Versicherungsmakler</title>
-    <meta name="description" content="Unabhängige Versicherungsmakler in Bretten und Waldbronn. Persönliche Beratung, klare Produkte, zuverlässiger Service – für Privat- und Gewerbekunden.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="/assets/img/favicon.png">
-    <meta property="og:title" content="BKF – Kübler & Fricker">
-    <meta property="og:description" content="Unabhängige Versicherungsmakler in Bretten und Waldbronn.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kuebler-fricker.de/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BKF – Kübler & Fricker | Unabhängige Versicherungsmakler</title>
+  <meta name="description" content="Unabhängiger Versicherungsmakler in Bretten und Waldbronn. Persönliche Beratung und klare Produkte für Privat- und Firmenkunden.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <script>
+    window.tailwind = { theme: { extend: { colors: { navy: '#1B2E47', accent: '#F38B2C', graybg: '#F5F6F7', text: '#333333' }, fontFamily: { heading: ['Lato','ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial'], body: ['Nunito Sans','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial'] }, boxShadow: { card: '0 10px 24px rgba(0,0,0,.08)' }, borderRadius: { card: '12px' } } } };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>html{scroll-behavior:smooth}</style>
 </head>
-<body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="/">
-                <img src="assets/img/logo.jpg" width="168" height="112" alt="BKF – Kübler & Fricker Logo">
-            </a>
-            <nav class="site-nav" aria-label="Hauptnavigation">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menü</button>
-                <ul id="nav-list" class="nav-list">
-                    <li><a aria-current="page" href="/">Home</a></li>
-                    <li><a href="ueber-uns.html">Über uns</a></li>
-                    <li><a href="produkte.html">Produkte</a></li>
-                    <li><a class="btn btn-primary" href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+<body class="font-body text-text">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-accent text-white px-3 py-2 rounded" href="#main">Zum Inhalt springen</a>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+    <div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="inline-flex items-center gap-3"><img src="assets/img/logo.jpg" alt="BKF – Logo" class="h-10 w-auto" loading="eager" decoding="async"><span class="sr-only">BKF – Kübler & Fricker</span></a>
+      <nav class="hidden md:flex items-center gap-6 font-semibold">
+        <a href="/" class="text-navy">Home</a>
+        <a href="ueber-uns.html" class="hover:text-navy">Über uns</a>
+        <a href="produkte.html" class="hover:text-navy">Produkte</a>
+        <a href="kontakt.html" class="inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-4 py-2 rounded-md">Kontakt aufnehmen</a>
+      </nav>
+      <button class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border" aria-label="Menü öffnen" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰</button>
+    </div>
+    <div id="mnav" class="md:hidden hidden border-t">
+      <nav class="max-w-[1200px] mx-auto px-6 py-3 flex flex-col gap-3">
+        <a href="/" class="text-navy">Home</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="kontakt.html" class="inline-flex w-fit items-center bg-accent hover:bg-[#E57E20] text-white px-4 py-2 rounded-md">Kontakt aufnehmen</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="bg-graybg">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7">
+          <h1 class="font-heading font-bold text-4xl md:text-6xl leading-tight text-navy">Versicherungslösungen mit Vertrauen – persönlich & regional.</h1>
+          <p class="mt-4 text-lg md:text-xl text-neutral-700">Ihr unabhängiger Versicherungsmakler in Bretten und Waldbronn.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="kontakt.html" class="inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-md font-semibold">Jetzt Kontakt aufnehmen</a>
+            <a href="ueber-uns.html" class="inline-flex items-center text-navy font-semibold underline underline-offset-4">Mehr über uns erfahren</a>
+          </div>
         </div>
-    </header>
-
-    <main id="main">
-        <section class="hero">
-            <div class="container hero-inner">
-                <div class="hero-copy">
-                    <h1>Versichern – klar, persönlich, regional.</h1>
-                    <p>Unabhängige Beratung und maßgeschneiderte Lösungen von Ihrem Versicherungsmakler in Bretten und Waldbronn. Für Menschen, Familien und Unternehmen.</p>
-                    <div class="hero-cta">
-                        <a class="btn btn-primary" href="kontakt.html">Beratung anfragen</a>
-                        <a class="btn btn-ghost" href="produkte.html">Produkte entdecken</a>
-                    </div>
-                </div>
-                <div class="hero-aside">
-                    <div class="trust-card">
-                        <h2>Warum BKF?</h2>
-                        <ul class="checklist">
-                            <li>Unabhängig & objektiv</li>
-                            <li>Transparent & verständlich</li>
-                            <li>Vor Ort in Bretten & Waldbronn</li>
-                            <li>Im Schadenfall an Ihrer Seite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="tiles container">
-            <article class="tile">
-                <h3>Privatkunden</h3>
-                <p>Von Haftpflicht bis Wohngebäude – wir finden die passenden Lösungen für Ihren Alltag.</p>
-                <a class="link-arrow" href="produkte.html#privatkunden">Mehr erfahren</a>
-            </article>
-            <article class="tile">
-                <h3>Gewerbe</h3>
-                <p>Schutz für Unternehmen, Selbstständige und Freiberufler – klar strukturiert und bedarfsgerecht.</p>
-                <a class="link-arrow" href="produkte.html#gewerbe">Mehr erfahren</a>
-            </article>
-            <article class="tile">
-                <h3>Schadenservice</h3>
-                <p>Schnell, erreichbar, verlässlich: Wir begleiten Sie vom Schaden bis zur Regulierung.</p>
-                <a class="link-arrow" href="kontakt.html#schaden">Kontakt aufnehmen</a>
-            </article>
-        </section>
-
-        <section class="split container">
-            <div>
-                <h2>Regional verwurzelt, überregional vernetzt.</h2>
-                <p>Als unabhängige Makler vertreten wir Ihre Interessen – nicht die einer Versicherung. Dank starker Partner und jahrelanger Erfahrung kombinieren wir Auswahl, Konditionen und persönliche Betreuung.</p>
-            </div>
-            <div class="card">
-                <h3>Unsere Standorte</h3>
-                <ul class="locations">
-                    <li><strong>Bretten</strong> – Innenstadt</li>
-                    <li><strong>Waldbronn</strong> – Nähe Albgaubad</li>
-                </ul>
-                <a class="link-arrow" href="kontakt.html#standorte">Anfahrt & Öffnungszeiten</a>
-            </div>
-        </section>
-    </main>
-
-    <section class="cta-band">
-        <div class="container">
-            <h2>Bereit für klare Beratung?</h2>
-            <div class="cta-actions">
-                <a class="btn btn-primary" href="kontakt.html">Jetzt Kontakt aufnehmen</a>
-                <a class="btn btn-ghost" href="produkte.html">Produkte entdecken</a>
-            </div>
+        <div class="md:col-span-5">
+          <div class="relative rounded-card overflow-hidden shadow-card">
+            <img src="assets/img/logo.jpg" alt="BKF – Team/Region Platzhalter" class="w-full h-[320px] md:h-[420px] object-cover" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-navy/10"></div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <img src="assets/img/logo.jpg" width="120" height="80" alt="BKF – Logo">
-                <p>Kübler & Fricker Versicherungsmakler – Klar. Persönlich. Regional.</p>
-            </div>
-            <nav class="footer-nav" aria-label="Footer">
-                <a href="ueber-uns.html">Über uns</a>
-                <a href="produkte.html">Produkte</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="#">Impressum</a>
-                <a href="#">Datenschutz</a>
-            </nav>
-            <p class="legal">© <span id="year"></span> BKF – Kübler & Fricker. Alle Rechte vorbehalten.</p>
+    <section class="bg-white">
+      <div class="max-w-[1200px] mx-auto px-6 py-20 md:py-24">
+        <div class="mb-10">
+          <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy">Unser Angebot auf einen Blick</h2>
+          <p class="mt-2 text-neutral-700">Maßgeschneiderte Absicherung für Privat- und Firmenkunden.</p>
         </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">🩺</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Gesundheit & Pflege</h3><p class="mt-1 text-neutral-700">Sicherheit für Ihre Familie</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">🚗</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Kraftfahrt</h3><p class="mt-1 text-neutral-700">Optimal geschützt auf jeder Fahrt</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">📈</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Vorsorge & Vermögen</h3><p class="mt-1 text-neutral-700">Zukunft mit Planung und Vertrauen</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">🏠</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Haus & Wohnen</h3><p class="mt-1 text-neutral-700">Schutz für Ihr Zuhause</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">⚖️</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Haftung & Recht</h3><p class="mt-1 text-neutral-700">Absicherung im Alltag</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><div class="text-3xl">🏢</div><h3 class="mt-3 font-heading font-bold text-xl text-navy">Firmenkunden</h3><p class="mt-1 text-neutral-700">Lösungen für Unternehmen und Selbständige</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-graybg"><div class="max-w-[1200px] mx-auto px-6 py-20 md:py-24"><div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="border rounded-card p-6 bg-white shadow-card"><div class="text-2xl">🏅</div><h3 class="mt-2 font-heading font-bold text-xl text-navy">Erfahrung</h3><p class="mt-1 text-neutral-700">Über 30 Jahre unabhängige Beratung</p></div><div class="border rounded-card p-6 bg-white shadow-card"><div class="text-2xl">📍</div><h3 class="mt-2 font-heading font-bold text-xl text-navy">Regionalität</h3><p class="mt-1 text-neutral-700">Zwei Standorte – immer in Ihrer Nähe</p></div><div class="border rounded-card p-6 bg-white shadow-card"><div class="text-2xl">🤝</div><h3 class="mt-2 font-heading font-bold text-xl text-navy">Persönlichkeit</h3><p class="mt-1 text-neutral-700">Feste Ansprechpartner statt Hotline</p></div></div></div></section>
+    <section class="bg-navy"><div class="max-w-[1200px] mx-auto px-6 py-16 text-center text-white"><h2 class="font-heading font-bold text-3xl md:text-4xl">Sichern Sie sich jetzt Ihre individuelle Beratung.</h2><a href="kontakt.html" class="mt-6 inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-md font-semibold">Jetzt Kontakt aufnehmen</a></div></section>
+  </main>
+  <footer class="bg-navy text-white"><div class="max-w-[1200px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"><div><img src="assets/img/logo.jpg" alt="BKF Logo" class="h-10 w-auto" loading="lazy" decoding="async"><p class="mt-3 text-white/80">Kübler & Fricker Assekuranz – Klar. Persönlich. Regional.</p></div><div><h3 class="font-heading font-bold">Standorte</h3><p class="mt-2 text-white/80">Bretten · Innenstadt<br>Waldbronn · Nähe Albgaubad</p><p class="mt-2 text-white/80">E‑Mail: info@kuebler-fricker.de</p></div><div><h3 class="font-heading font-bold">Links</h3><ul class="mt-2 space-y-1"><li><a class="text-accent hover:underline" href="ueber-uns.html">Über uns</a></li><li><a class="text-accent hover:underline" href="produkte.html">Produkte</a></li><li><a class="text-accent hover:underline" href="kontakt.html">Kontakt</a></li><li><a class="text-accent hover:underline" href="#">Impressum</a></li><li><a class="text-accent hover:underline" href="#">Datenschutz</a></li></ul></div></div><div class="border-t border-white/10"><p class="max-w-[1200px] mx-auto px-6 py-4 text-white/70">© <span id="year"></span> BKF – Kübler & Fricker. Alle Rechte vorbehalten.</p></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
-<!doctype html>
-<html lang="de">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BKF – Kübler & Fricker | Unabhängige Versicherungsmakler</title>
-    <meta name="description" content="Unabhängige Versicherungsmakler in Bretten und Waldbronn. Persönliche Beratung, klare Produkte, zuverlässiger Service – für Privat- und Gewerbekunden.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="/assets/img/favicon.png">
-    <meta property="og:title" content="BKF – Kübler & Fricker">
-    <meta property="og:description" content="Unabhängige Versicherungsmakler in Bretten und Waldbronn.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kuebler-fricker.de/">
-</head>
-<body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="/">
-                <img src="assets/img/logo.jpg" width="168" height="112" alt="BKF – Kübler & Fricker Logo">
-            </a>
-            <nav class="site-nav" aria-label="Hauptnavigation">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menü</button>
-                <ul id="nav-list" class="nav-list">
-                    <li><a aria-current="page" href="/">Home</a></li>
-                    <li><a href="ueber-uns.html">Über uns</a></li>
-                    <li><a href="produkte.html">Produkte</a></li>
-                    <li><a class="btn btn-primary" href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main id="main">
-        <section class="hero">
-            <div class="container hero-inner">
-                <div class="hero-copy">
-                    <h1>Versichern – klar, persönlich, regional.</h1>
-                    <p>Unabhängige Beratung und maßgeschneiderte Lösungen von Ihrem Versicherungsmakler in Bretten und Waldbronn. Für Menschen, Familien und Unternehmen.</p>
-                    <div class="hero-cta">
-                        <a class="btn btn-primary" href="kontakt.html">Beratung anfragen</a>
-                        <a class="btn btn-ghost" href="produkte.html">Produkte entdecken</a>
-                    </div>
-                </div>
-                <div class="hero-aside">
-                    <div class="trust-card">
-                        <h2>Warum BKF?</h2>
-                        <ul class="checklist">
-                            <li>Unabhängig & objektiv</li>
-                            <li>Transparent & verständlich</li>
-                            <li>Vor Ort in Bretten & Waldbronn</li>
-                            <li>Im Schadenfall an Ihrer Seite</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="tiles container">
-            <article class="tile">
-                <h3>Privatkunden</h3>
-                <p>Von Haftpflicht bis Wohngebäude – wir finden die passenden Lösungen für Ihren Alltag.</p>
-                <a class="link-arrow" href="produkte.html#privatkunden">Mehr erfahren</a>
-            </article>
-            <article class="tile">
-                <h3>Gewerbe</h3>
-                <p>Schutz für Unternehmen, Selbstständige und Freiberufler – klar strukturiert und bedarfsgerecht.</p>
-                <a class="link-arrow" href="produkte.html#gewerbe">Mehr erfahren</a>
-            </article>
-            <article class="tile">
-                <h3>Schadenservice</h3>
-                <p>Schnell, erreichbar, verlässlich: Wir begleiten Sie vom Schaden bis zur Regulierung.</p>
-                <a class="link-arrow" href="kontakt.html#schaden">Kontakt aufnehmen</a>
-            </article>
-        </section>
-
-        <section class="split container">
-            <div>
-                <h2>Regional verwurzelt, überregional vernetzt.</h2>
-                <p>Als unabhängige Makler vertreten wir Ihre Interessen – nicht die einer Versicherung. Dank starker Partner und jahrelanger Erfahrung kombinieren wir Auswahl, Konditionen und persönliche Betreuung.</p>
-            </div>
-            <div class="card">
-                <h3>Unsere Standorte</h3>
-                <ul class="locations">
-                    <li><strong>Bretten</strong> – Innenstadt</li>
-                    <li><strong>Waldbronn</strong> – Nähe Albgaubad</li>
-                </ul>
-                <a class="link-arrow" href="kontakt.html#standorte">Anfahrt & Öffnungszeiten</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <img src="assets/img/logo.jpg" width="120" height="80" alt="BKF – Logo">
-                <p>Kübler & Fricker Versicherungsmakler – Klar. Persönlich. Regional.</p>
-            </div>
-            <nav class="footer-nav" aria-label="Footer">
-                <a href="ueber-uns.html">Über uns</a>
-                <a href="produkte.html">Produkte</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="#">Impressum</a>
-                <a href="#">Datenschutz</a>
-            </nav>
-            <p class="legal">© <span id="year"></span> BKF – Kübler & Fricker. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
-
-
+ 
