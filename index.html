@@ -39,18 +39,21 @@
   </header>
   <main id="main">
     <!-- Hero -->
-    <section class="bg-graybg">
-      <div class="max-w-[1200px] mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-8 items-center">
+    <section class="relative overflow-hidden bg-gradient-to-br from-graybg to-white">
+      <div class="pointer-events-none absolute -top-20 -left-24 h-80 w-80 bg-accent/10 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-16 -right-24 h-80 w-80 bg-navy/10 rounded-full blur-3xl"></div>
+      <div class="max-w-[1200px] mx-auto px-6 py-20 md:py-28 grid md:grid-cols-12 gap-10 items-center">
         <div class="md:col-span-7">
-          <h1 class="font-heading font-bold text-4xl md:text-6xl leading-tight text-navy">Ihr Versicherungsmakler für Privat- und Firmenkunden.</h1>
-          <p class="mt-4 text-lg md:text-xl text-neutral-700">Unabhängig, persönlich und regional – wir vergleichen für Sie und finden die Absicherung, die wirklich passt.</p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a href="kontakt.html" class="inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-md font-semibold">Jetzt Beratung anfragen</a>
+          <span class="inline-flex items-center gap-2 text-sm font-semibold text-navy/80 bg-white border border-gray-200 px-3 py-1 rounded-full shadow-sm">Unabhängig • Persönlich • Regional</span>
+          <h1 class="mt-4 font-heading font-bold text-4xl md:text-6xl leading-tight text-navy">Ihr Versicherungsmakler für Privat- und Firmenkunden.</h1>
+          <p class="mt-4 text-lg md:text-xl text-neutral-700">Wir vergleichen Tarife führender Versicherer und begleiten Sie vom ersten Gespräch bis im Schadenfall.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="kontakt.html" class="inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-lg font-semibold shadow-card">Jetzt Beratung anfragen</a>
           </div>
         </div>
         <div class="md:col-span-5">
-          <div class="relative rounded-card overflow-hidden shadow-card">
-            <img src="assets/img/logo.jpg" alt="BKF – Symbolbild" class="w-full h-[320px] md:h-[420px] object-cover" loading="lazy" decoding="async">
+          <div class="relative rounded-2xl overflow-hidden shadow-card ring-1 ring-gray-200">
+            <img src="assets/img/logo.jpg" alt="BKF – Symbolbild" class="w-full h-[340px] md:h-[440px] object-cover" loading="lazy" decoding="async">
             <div class="absolute inset-0 bg-navy/10"></div>
           </div>
         </div>
@@ -59,25 +62,25 @@
 
     <!-- Intro / Values -->
     <section class="bg-white">
-      <div class="max-w-[1200px] mx-auto px-6 py-14 md:py-18">
+      <div class="max-w-[1200px] mx-auto px-6 py-16 md:py-20">
         <div class="md:max-w-3xl">
           <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy">Klar. Persönlich. Unabhängig.</h2>
           <p class="mt-3 text-neutral-700">Seit vielen Jahren beraten wir Privatpersonen, Familien, Selbstständige und Unternehmen in der Region. Als unabhängige Makler vergleichen wir Tarife führender Versicherer – transparent und auf Augenhöhe.</p>
         </div>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="border rounded-card p-5 bg-white shadow-card">
-            <div class="text-2xl">🤝</div>
-            <h3 class="mt-2 font-heading font-bold text-navy">Beratung</h3>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="border rounded-2xl p-6 bg-white shadow-card hover:shadow-lg transition-shadow">
+            <div class="h-10 w-10 grid place-items-center rounded-full bg-graybg text-navy text-lg">🤝</div>
+            <h3 class="mt-3 font-heading font-bold text-navy">Beratung</h3>
             <p class="mt-1 text-neutral-700">Individuell, verständlich und ohne Fachchinesisch.</p>
           </div>
-          <div class="border rounded-card p-5 bg-white shadow-card">
-            <div class="text-2xl">🏅</div>
-            <h3 class="mt-2 font-heading font-bold text-navy">Erfahrung</h3>
+          <div class="border rounded-2xl p-6 bg-white shadow-card hover:shadow-lg transition-shadow">
+            <div class="h-10 w-10 grid place-items-center rounded-full bg-graybg text-navy text-lg">🏅</div>
+            <h3 class="mt-3 font-heading font-bold text-navy">Erfahrung</h3>
             <p class="mt-1 text-neutral-700">Langjährige Expertise und feste Ansprechpartner.</p>
           </div>
-          <div class="border rounded-card p-5 bg-white shadow-card">
-            <div class="text-2xl">🧭</div>
-            <h3 class="mt-2 font-heading font-bold text-navy">Unabhängigkeit</h3>
+          <div class="border rounded-2xl p-6 bg-white shadow-card hover:shadow-lg transition-shadow">
+            <div class="h-10 w-10 grid place-items-center rounded-full bg-graybg text-navy text-lg">🧭</div>
+            <h3 class="mt-3 font-heading font-bold text-navy">Unabhängigkeit</h3>
             <p class="mt-1 text-neutral-700">Wir vergleichen – Sie entscheiden entspannt.</p>
           </div>
         </div>
@@ -91,12 +94,42 @@
           <p class="mt-2 text-neutral-700">Maßgeschneiderte Absicherung für Privat- und Firmenkunden.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Gesundheit%20und%20Pflege.png" alt="Gesundheit und Pflege" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Gesundheit & Pflege</h3><p class="mt-1 text-neutral-700">Sicherheit für Ihre Familie</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Kraftfahrt.png" alt="Kraftfahrt" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Kraftfahrt</h3><p class="mt-1 text-neutral-700">Optimal geschützt auf jeder Fahrt</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Vorsorge%20und%20Vermoegen.png" alt="Vorsorge und Vermögen" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Vorsorge & Vermögen</h3><p class="mt-1 text-neutral-700">Zukunft mit Planung und Vertrauen</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Haus%20und%20Wohnen.png" alt="Haus und Wohnen" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Haus & Wohnen</h3><p class="mt-1 text-neutral-700">Schutz für Ihr Zuhause</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Haftung%20und%20Recht.png" alt="Haftung und Recht" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Haftung & Recht</h3><p class="mt-1 text-neutral-700">Absicherung im Alltag</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
-          <a href="kontakt.html" class="group border rounded-card p-6 shadow-card bg-white hover:-translate-y-0.5 transition transform"><img src="assets/img/Produkte/Firmenkunden.png" alt="Firmenkunden" class="h-24 w-auto" loading="lazy"><h3 class="mt-3 font-heading font-bold text-xl text-navy">Firmenkunden</h3><p class="mt-1 text-neutral-700">Lösungen für Unternehmen und Selbständige</p><span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span></a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Gesundheit%20und%20Pflege.png" alt="Gesundheit und Pflege" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Gesundheit & Pflege</h3>
+            <p class="mt-1 text-neutral-700">Sicherheit für Ihre Familie</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Kraftfahrt.png" alt="Kraftfahrt" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Kraftfahrt</h3>
+            <p class="mt-1 text-neutral-700">Optimal geschützt auf jeder Fahrt</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Vorsorge%20und%20Vermoegen.png" alt="Vorsorge und Vermögen" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Vorsorge & Vermögen</h3>
+            <p class="mt-1 text-neutral-700">Zukunft mit Planung und Vertrauen</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Haus%20und%20Wohnen.png" alt="Haus und Wohnen" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Haus & Wohnen</h3>
+            <p class="mt-1 text-neutral-700">Schutz für Ihr Zuhause</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Haftung%20und%20Recht.png" alt="Haftung und Recht" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Haftung & Recht</h3>
+            <p class="mt-1 text-neutral-700">Absicherung im Alltag</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
+          <a href="kontakt.html" class="group border rounded-2xl p-4 shadow-card bg-white hover:-translate-y-0.5 transition transform hover:shadow-lg">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-gray-200"><img src="assets/img/Produkte/Firmenkunden.png" alt="Firmenkunden" class="w-full h-full object-cover" loading="lazy"></div>
+            <h3 class="mt-3 font-heading font-bold text-xl text-navy">Firmenkunden</h3>
+            <p class="mt-1 text-neutral-700">Lösungen für Unternehmen und Selbständige</p>
+            <span class="mt-3 inline-block text-navy font-semibold group-hover:underline">Kontakt</span>
+          </a>
         </div>
       </div>
     </section>
@@ -104,24 +137,26 @@
     <!-- Partner Logos -->
     <section class="bg-graybg">
       <div class="max-w-[1200px] mx-auto px-6 py-12 md:py-14">
-        <p class="text-center text-neutral-700">Wir arbeiten u. a. mit</p>
-        <ul class="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-navy/70 font-semibold">
-          <li>Allianz</li>
-          <li>AXA</li>
-          <li>ERGO</li>
-          <li>HUK</li>
-          <li>R+V</li>
-          <li>Signal Iduna</li>
-        </ul>
+        <div class="border rounded-2xl bg-white shadow-card px-6 py-6">
+          <p class="text-center text-neutral-700">Wir arbeiten u. a. mit</p>
+          <ul class="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-navy/70 font-semibold">
+            <li>Allianz</li>
+            <li>AXA</li>
+            <li>ERGO</li>
+            <li>HUK</li>
+            <li>R+V</li>
+            <li>Signal Iduna</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <!-- CTA light -->
+    <!-- CTA strong -->
     <section class="bg-white">
       <div class="max-w-[1200px] mx-auto px-6 py-16 md:py-20">
-        <div class="border rounded-card p-6 md:p-8 bg-graybg text-center shadow-card">
-          <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy">Sie möchten ein unverbindliches Angebot?</h2>
-          <p class="mt-2 text-neutral-700">Wir melden uns schnellstmöglich mit einer individuellen Einschätzung.</p>
-          <a href="kontakt.html" class="mt-6 inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-md font-semibold">Jetzt Kontakt aufnehmen</a>
+        <div class="rounded-2xl p-8 md:p-10 bg-navy text-white shadow-card">
+          <h2 class="font-heading font-bold text-3xl md:text-4xl">Sie möchten ein unverbindliches Angebot?</h2>
+          <p class="mt-2 text-white/90">Wir melden uns schnellstmöglich mit einer individuellen Einschätzung.</p>
+          <a href="kontakt.html" class="mt-6 inline-flex items-center bg-accent hover:bg-[#E57E20] text-white px-6 py-3 rounded-lg font-semibold">Jetzt Kontakt aufnehmen</a>
         </div>
       </div>
     </section>
