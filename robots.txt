@@ -3,4 +3,9 @@ Allow: /
 
 Sitemap: https://kuebler-fricker.de/sitemap.xml
 
+User-agent: *
+Allow: /
+
+Sitemap: https://kuebler-fricker.de/sitemap.xml
+
 
